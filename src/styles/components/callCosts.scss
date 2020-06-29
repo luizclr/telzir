@@ -1,0 +1,17 @@
+@import "../base/variables/index";
+
+.call-costs {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: $gray;
+    }
+
+    span {
+      color: $green-dark;
+      font-weight: bold;
+    }
+  }
+}
