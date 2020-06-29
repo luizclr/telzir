@@ -1,7 +1,7 @@
 import { CITIES_COMBINATION, DEFAULT_EXTRA_TAX } from "../consts";
-import { IPlan } from "../interfaces";
+import { ICallCosts } from "../interfaces";
 
-const getPlanValues = (minutes: number, plan: number, tax: number): IPlan => {
+const getPlanValues = (minutes: number, plan: number, tax: number): ICallCosts => {
   const surplus =  minutes - plan;
   const withoutPlan = minutes * tax;
   let withPlan = 0;
@@ -27,7 +27,7 @@ export const calculateCallValues = (
     destinyCode: number,
     minutes: number,
     plan: number,
-  ): object => {
+  ): ICallCosts => {
     const tax = getCallingTax(originCode, destinyCode);
     const values = getPlanValues(minutes, plan, tax);
 

@@ -1,0 +1,38 @@
+@import "./variables/index";
+
+.card {
+  padding: 20px;
+  border-radius: $border-radius-2;
+  background-color: $white;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+  -moz-box-shadow: 0px 3px 6px #00000029;
+  box-shadow: 0px 3px 6px #00000029;
+  min-height: 300px;
+  max-width: 300px;
+  width: 100%;
+
+  @media (max-width: $window-breakpoint) {
+    padding: 10px;
+  }
+}
+
+// SHADOW
+.shadow-1 {
+  -webkit-box-shadow: 0px 0px 6px #00000029;
+  -moz-box-shadow: 0px 0px 6px #00000029;
+  box-shadow: 0px 0px 6px #00000029;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $window-breakpoint) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.py-10 {
+  padding: 10px 0;
+}

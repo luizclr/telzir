@@ -2,6 +2,8 @@ import { ICombination } from "../interfaces";
 
 export const CITY_CODE: number[] = [11, 16, 17, 18];
 
+export const PLAN_NUMBER: number[] = [30, 60, 120];
+
 export const DEFAULT_EXTRA_TAX = 1.1;
 
 export const TAX_BY_COMBINATION = {

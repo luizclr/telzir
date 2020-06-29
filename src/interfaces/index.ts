@@ -1,4 +1,4 @@
-export interface IPlan {
+export interface ICallCosts {
   withPlan: number,
   withoutPlan: number,
 };
