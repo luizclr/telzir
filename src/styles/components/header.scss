@@ -1,0 +1,38 @@
+@import "../base/variables/index";
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 20px 20px;
+
+  img {
+    height: 60px;
+    transform: rotate(-15deg);
+    margin-right: -16px;
+  }
+
+  .title {
+    font-family: "Angella" !important;
+    color: $blue;
+    font-size: $font-size-base * 4;
+    margin: 0;
+    z-index: 1;
+
+    span {
+      color: #dc143c;
+    }
+  }
+
+  @media (max-width: $window-breakpoint) {
+    padding: 0 10px 10px 10px;
+
+    img {
+      height: 30px;
+      margin-right: -8px;
+    }
+
+    .title {
+      font-size: $font-size-base * 2;
+    }
+  }
+}

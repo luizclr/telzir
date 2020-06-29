@@ -1,0 +1,47 @@
+@import "base/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+:root {
+  background-color: #6495ed;
+  height: 100% !important;
+  font-size: $font-size-base;
+  font-family: $font-angela;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $black;
+}
+
+label {
+  font-size: $font-size-base * 0.7;
+}
+
+input,
+select {
+  height: 23px;
+  background-color: $white;
+  border: 1px solid $gray-lightest;
+  border-radius: 3px;
+  padding: 3px 5px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 30%;
+  padding: 5px 0;
+
+  @media (max-width: $window-breakpoint) {
+    width: 100%;
+  }
+}
