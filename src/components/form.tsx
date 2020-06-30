@@ -1,16 +1,16 @@
 import React, { FormEvent, useState } from "react";
 
 import { CITY_CODE, PLAN_NUMBER } from "../consts";
-import { ICallCosts } from "../interfaces";
 
 import { calculateCallValues } from "../utils";
 
-const Form = () => {
+type ComponentProps = { setCallCosts: Function };
+
+const Form = ({ setCallCosts }: ComponentProps) => {
   const [originCode, setOriginCode] = useState<number>();
   const [destinyCode, setDestinyCode] = useState<number>();
   const [minutes, setMinutes] = useState<number>();
   const [plan, setPlan] = useState<number>();
-  const [callCosts, setCallCosts] = useState<ICallCosts>();
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,7 +23,6 @@ const Form = () => {
         plan
       );
       setCallCosts(values);
-      console.log(values);
     }
   };
 
@@ -81,6 +80,10 @@ const Form = () => {
       </div>
     </form>
   );
+};
+
+Form.defaultProps = {
+  setCallCosts: () => {},
 };
 
 export default Form;

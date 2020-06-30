@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/App.scss";
 
 import Header from "./header";
@@ -6,12 +6,14 @@ import Form from "./form";
 import CallCosts from "./callCosts";
 
 const App = () => {
+  const [callCosts, setCallCosts] = useState({ withPlan: 0, withoutPlan: 0 });
+
   return (
     <div className="App">
       <div className="card">
         <Header />
-        <Form />
-        <CallCosts callCosts={{ withPlan: 0, withoutPlan: 0 }} />
+        <Form setCallCosts={setCallCosts} />
+        <CallCosts callCosts={callCosts} />
       </div>
     </div>
   );
