@@ -8,3 +8,8 @@ export interface ICombination {
   name: string;
   value: number;
 }
+
+export interface ITax {
+  valid: boolean;
+  tax: number;
+}

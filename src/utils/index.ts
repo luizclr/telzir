@@ -1,5 +1,5 @@
 import { CITIES_COMBINATION, DEFAULT_EXTRA_TAX } from "../consts";
-import { ICallCosts } from "../interfaces";
+import { ICallCosts, ITax } from "../interfaces";
 
 const getPlanValues = (
   minutes: number,
@@ -15,10 +15,7 @@ const getPlanValues = (
   return { valid: true, withPlan, withoutPlan };
 };
 
-const getCallingTax = (
-  originCode: number,
-  destinyCode: number
-): { valid: boolean; tax: number } => {
+const getCallingTax = (originCode: number, destinyCode: number): ITax => {
   const key = `${originCode}-${destinyCode}`;
   let tax = null;
   let valid = true;
