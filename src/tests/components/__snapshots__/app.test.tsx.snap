@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render <App /> 1`] = `
+<div
+  className="App"
+  data-testid="app"
+>
+  <div
+    className="card"
+  >
+    <Header />
+    <Form
+      setCallCosts={[Function]}
+    />
+    <CallCosts
+      callCosts={
+        Object {
+          "valid": false,
+          "withPlan": 0,
+          "withoutPlan": 0,
+        }
+      }
+    />
+  </div>
+</div>
+`;

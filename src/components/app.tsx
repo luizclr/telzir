@@ -13,7 +13,7 @@ const App = () => {
   });
 
   return (
-    <div className="App">
+    <div data-testid="app" className="App">
       <div className="card">
         <Header />
         <Form setCallCosts={setCallCosts} />
