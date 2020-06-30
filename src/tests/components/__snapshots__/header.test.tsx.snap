@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render 1`] = `
+<div
+  className="header"
+>
+  <img
+    alt="logo"
+    src="emoji.svg"
+  />
+  <h1
+    className="title"
+  >
+    Tel
+    <span>
+      z
+    </span>
+    ir
+  </h1>
+</div>
+`;
