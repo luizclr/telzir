@@ -8,13 +8,13 @@ const CallCosts = ({ callCosts }: ComponentProps) => (
   <div className="call-costs">
     <div className="call-costs__row">
       <p>With plan:</p>
-      <span>
+      <span id="withPlan">
         {callCosts.valid ? `$ ${callCosts.withPlan.toFixed(2)}` : "-"}
       </span>
     </div>
     <div className="call-costs__row">
       <p>Without plan:</p>
-      <span>
+      <span id="withoutPlan">
         {callCosts.valid ? `$ ${callCosts.withoutPlan.toFixed(2)}` : "-"}
       </span>
     </div>

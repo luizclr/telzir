@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render <App /> 1`] = `
+exports[`<App /> should render component 1`] = `
 <div
   className="App"
   data-testid="app"

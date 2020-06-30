@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CallCosts /> should render 1`] = `
+<div
+  className="call-costs"
+>
+  <div
+    className="call-costs__row"
+  >
+    <p>
+      With plan:
+    </p>
+    <span
+      id="withPlan"
+    >
+      -
+    </span>
+  </div>
+  <div
+    className="call-costs__row"
+  >
+    <p>
+      Without plan:
+    </p>
+    <span
+      id="withoutPlan"
+    >
+      -
+    </span>
+  </div>
+</div>
+`;
