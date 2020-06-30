@@ -26,6 +26,8 @@ const Form = ({ setCallCosts }: ComponentProps) => {
     }
   };
 
+  const shouldDisableButton = !originCode || !destinyCode || !minutes || !plan;
+
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
       <div className="row">
@@ -74,7 +76,12 @@ const Form = ({ setCallCosts }: ComponentProps) => {
         </select>
       </div>
       <div className="py-10">
-        <button className="button button__fill--green" type="submit">
+        <button
+          className={`button button__fill--green ${
+            shouldDisableButton && "disabled"
+          }`}
+          type="submit"
+        >
           calcular
         </button>
       </div>
