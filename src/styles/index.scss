@@ -21,12 +21,13 @@ body,
 }
 
 label {
-  font-size: $font-size-base * 0.7;
+  font-size: $font-size-base;
+  color: $gray-dark;
 }
 
 input,
 select {
-  height: 23px;
+  height: 35px;
   background-color: $white;
   border: 1px solid $gray-lightest;
   border-radius: 3px;
