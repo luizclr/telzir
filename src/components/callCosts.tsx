@@ -7,15 +7,15 @@ type ComponentProps = { callCosts: ICallCosts };
 const CallCosts = ({ callCosts }: ComponentProps) => (
   <div className="call-costs">
     <div className="call-costs__row">
-      <p>Com plano:</p>
+      <p>With plan:</p>
       <span>
-        {callCosts.valid ? `R$ ${callCosts.withPlan.toFixed(2)}` : "-"}
+        {callCosts.valid ? `$ ${callCosts.withPlan.toFixed(2)}` : "-"}
       </span>
     </div>
     <div className="call-costs__row">
-      <p>Sem plano:</p>
+      <p>Without plan:</p>
       <span>
-        {callCosts.valid ? `R$ ${callCosts.withoutPlan.toFixed(2)}` : "-"}
+        {callCosts.valid ? `$ ${callCosts.withoutPlan.toFixed(2)}` : "-"}
       </span>
     </div>
   </div>

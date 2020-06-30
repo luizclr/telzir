@@ -67,7 +67,7 @@ const Form = ({ setCallCosts }: ComponentProps) => {
         </div>
       </div>
       <div>
-        <label>plan</label>
+        <label>Plan</label>
         <select name="plan" onChange={(e) => setPlan(Number(e.target.value))}>
           <option selected disabled></option>
           {PLAN_NUMBER.map((plan) => (
@@ -82,7 +82,7 @@ const Form = ({ setCallCosts }: ComponentProps) => {
           }`}
           type="submit"
         >
-          calcular
+          calculate
         </button>
       </div>
     </form>
