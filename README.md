@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/luizclr/telzir.svg?style=svg&circle-token=6403f6d14189baa45369e2fb8484c4f7dfb0e94b)](https://circleci.com/gh/luizclr/telzir)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
