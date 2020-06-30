@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9b513ed1-5e13-4766-a67d-510c84e793e1/deploy-status)](https://app.netlify.com/sites/luiz-telzir/deploys)
+
 [![CircleCI](https://circleci.com/gh/luizclr/telzir.svg?style=svg&circle-token=6403f6d14189baa45369e2fb8484c4f7dfb0e94b)](https://circleci.com/gh/luizclr/telzir)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
