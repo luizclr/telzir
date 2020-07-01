@@ -1,48 +1,95 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9b513ed1-5e13-4766-a67d-510c84e793e1/deploy-status)](https://app.netlify.com/sites/luiz-telzir/deploys)
+<img
+  src="src/assets/images/telzir-logo.png"
+  style="display: block; margin: 0 auto; height: 130px"
+/>
 
-[![CircleCI](https://circleci.com/gh/luizclr/telzir.svg?style=svg&circle-token=6403f6d14189baa45369e2fb8484c4f7dfb0e94b)](https://circleci.com/gh/luizclr/telzir)
+<p align="center">
+  <a href="https://app.netlify.com/sites/luiz-telzir/deploys">
+    <img
+      src="https://api.netlify.com/api/v1/badges/9b513ed1-5e13-4766-a67d-510c84e793e1/deploy-status"
+      alt="Netlify Status"/>
+  </a>
+  <a href="https://circleci.com/gh/luizclr/telzir">
+    <img
+      src="https://circleci.com/gh/luizclr/telzir.svg?style=svg&circle-token=6403f6d14189baa45369e2fb8484c4f7dfb0e94b"
+      alt="CircleCI"/>
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Application](#application)
+- [Requirements](#requirements)
+- [Running](#running)
+  - [Install](#install)
+  - [Yarn](#yarn)
+  - [Docker](#docker)
+- [Testing](#testing)
+- [Build](#build)
+- [License](#license)
 
-In the project directory, you can run:
+## Application
 
-### `yarn start`
+<img
+  src="src/assets/images/telzir-home.png"
+  style="display: block; margin: 0 auto; width: 630px; -webkit-box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
+border: 10px solid white; border-radius: 5px;"
+/>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> A _Telzir_ application that helps customers to choose the best phone plan acording to their calling time.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p style="text-align: center; font-size: 14pt;"><a href="https://luiz-telzir.netlify.app/">https://luiz-telzir.netlify.app/</a><p>
 
-### `yarn test`
+## Requirements
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- nodejs >= 12.18.1
+- yarn >= 1.22.4
 
-### `yarn build`
+## Running
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```bash
+# Install packages
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Yarn
 
-### `yarn eject`
+```bash
+# Start dev server locally
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Docker
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Build
+docker build -t telzir:dev .
+# Run
+docker run -v ${PWD}:/app -v /app/node_modules -p 3001:3000 --rm telzir:dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Application will be opened automatically on [localhost:3000](http://localhost:3000).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Testing
 
-## Learn More
+```bash
+# run teste
+yarn test
+# test coverage
+yarn test:coverage
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Build for production
+yarn build
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
