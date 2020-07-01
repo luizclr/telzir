@@ -1,7 +1,9 @@
-<img
-  src="src/assets/images/telzir-logo.png"
-  style="display: block; margin: 0 auto; height: 130px"
-/>
+<p align="center">
+  <img
+    src="src/assets/images/telzir-logo.png"
+    height="130px"
+  />
+<p>
 
 <p align="center">
   <a href="https://app.netlify.com/sites/luiz-telzir/deploys">
@@ -30,17 +32,20 @@
 
 ## Application
 
-<img
-  src="src/assets/images/telzir-home.png"
-  style="display: block; margin: 0 auto; width: 630px; -webkit-box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
-box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
-border: 10px solid white; border-radius: 5px;"
-/>
+<p align="center">
+  <img
+    src="src/assets/images/telzir-home.png"
+    width="630px"
+    style="-webkit-box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 28px -12px rgba(0,0,0,0.75);
+  border: 10px solid white; border-radius: 5px;"
+  />
+</p>
 
 > A _Telzir_ application that helps customers to choose the best phone plan acording to their calling time.
 
-<p style="text-align: center; font-size: 14pt;"><a href="https://luiz-telzir.netlify.app/">https://luiz-telzir.netlify.app/</a><p>
+<p align="center" style="font-size: 14pt;"><a href="https://luiz-telzir.netlify.app/">https://luiz-telzir.netlify.app/</a><p>
 
 ## Requirements
 
