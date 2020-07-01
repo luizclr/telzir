@@ -45,7 +45,7 @@
 
 > A _Telzir_ application that helps customers to choose the best phone plan acording to their calling time.
 
-<p align="center" style="font-size: 14pt;"><a href="https://luiz-telzir.netlify.app/">https://luiz-telzir.netlify.app/</a><p>
+<h2 align="center"><a href="https://luiz-telzir.netlify.app/">https://luiz-telzir.netlify.app/</a><h2>
 
 ## Requirements
 
