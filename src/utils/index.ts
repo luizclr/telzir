@@ -1,6 +1,19 @@
 import { CITIES_COMBINATION, DEFAULT_EXTRA_TAX } from "../consts";
 import { ICallCosts, ITax } from "../interfaces";
 
+/**
+ * Get calling tax.
+ *
+ * returns an object acording to combination code:
+ * {
+ *    valid,  // true if code have matched
+ *    tax,    // if valid, it returns matches tax, else zero.
+ * }
+ *
+ * @param {number} originCode - Origin city code
+ * @param {number} destinyCode - Destiny city code
+ * @return {ITax}
+ */
 export const getCallingTax = (
   originCode: number,
   destinyCode: number
@@ -21,6 +34,21 @@ export const getCallingTax = (
   return { valid, tax };
 };
 
+/**
+ * Get plan values.
+ *
+ * returns an object acording to combination code:
+ * {
+ *    valid,        // indicates that object is valid
+ *    withPlan,     // calling value with plan
+ *    withoutPlan,  // calling value without plan
+ * }
+ *
+ * @param {number} minutes - minutes that costumer spends in calls
+ * @param {number} plan - Plan number
+ * @param {number} tax - Tax value
+ * @return {ICallCosts}
+ */
 export const getPlanValues = (
   minutes: number,
   plan: number,
@@ -35,6 +63,21 @@ export const getPlanValues = (
   return { valid: true, withPlan, withoutPlan };
 };
 
+/**
+ * Calculate call values.
+ *
+ * Check if is a valid match and returns its coresponding values,
+ * else it returns a default value
+ *
+ * @example { valid: true, withPlan: 20.60, withoutPlan: 58.29 }
+ * @example { valid: false, withPlan: 0, withoutPlan: 0 }
+ *
+ * @param {number} originCode - Origin city code
+ * @param {number} destinyCode - Destiny city code
+ * @param {number} minutes - minutes that costumer spends in calls
+ * @param {number} plan - Plan number
+ * @return {ICallCosts}
+ */
 export const calculateCallValues = (
   originCode: number,
   destinyCode: number,

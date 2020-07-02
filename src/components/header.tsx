@@ -3,6 +3,11 @@ import "../styles/components/header.scss";
 
 import logo from "../assets/images/emoji.svg";
 
+/**
+ * Header component.
+ *
+ * @return {React.StatelessComponent} Component
+ */
 const Header = () => {
   return (
     <div className="header">

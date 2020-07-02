@@ -5,6 +5,11 @@ import Header from "./header";
 import Form from "./form";
 import CallCosts from "./callCosts";
 
+/**
+ * App component
+ *
+ * @return {React.StatelessComponent} Component
+ */
 const App = () => {
   const [callCosts, setCallCosts] = useState({
     valid: false,

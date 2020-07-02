@@ -1,11 +1,17 @@
 import React, { FormEvent, useState } from "react";
 
-import { CITY_CODE, PLAN_NUMBER } from "../consts";
+import { CITIES_CODE, PLAN_NUMBERS } from "../consts";
 
 import { calculateCallValues } from "../utils";
 
 type ComponentProps = { setCallCosts: Function };
 
+/**
+ * Form component.
+ *
+ * @param {function} setCallCosts - callback function to update parent information
+ * @return {React.StatelessComponent} Component
+ */
 const Form = ({ setCallCosts }: ComponentProps) => {
   const [originCode, setOriginCode] = useState<number>();
   const [destinyCode, setDestinyCode] = useState<number>();
@@ -26,6 +32,9 @@ const Form = ({ setCallCosts }: ComponentProps) => {
     }
   };
 
+  /**
+   * Should disable button - condition to disable button
+   */
   const shouldDisableButton = !originCode || !destinyCode || !minutes || !plan;
 
   return (
@@ -38,7 +47,7 @@ const Form = ({ setCallCosts }: ComponentProps) => {
             onChange={(e) => setOriginCode(Number(e.target.value))}
           >
             <option selected disabled></option>
-            {CITY_CODE.map((code) => (
+            {CITIES_CODE.map((code) => (
               <option key={code}>{code}</option>
             ))}
           </select>
@@ -51,7 +60,7 @@ const Form = ({ setCallCosts }: ComponentProps) => {
             onChange={(e) => setDestinyCode(Number(e.target.value))}
           >
             <option selected disabled></option>
-            {CITY_CODE.map((code) => (
+            {CITIES_CODE.map((code) => (
               <option key={code}>{code}</option>
             ))}
           </select>
@@ -70,7 +79,7 @@ const Form = ({ setCallCosts }: ComponentProps) => {
         <label>Plan</label>
         <select name="plan" onChange={(e) => setPlan(Number(e.target.value))}>
           <option selected disabled></option>
-          {PLAN_NUMBER.map((plan) => (
+          {PLAN_NUMBERS.map((plan) => (
             <option key={plan}>{plan}</option>
           ))}
         </select>
