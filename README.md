@@ -23,9 +23,6 @@
 - [Application](#application)
 - [Requirements](#requirements)
 - [Running](#running)
-  - [Install](#install)
-  - [Yarn](#yarn)
-  - [Docker](#docker)
 - [Testing](#testing)
 - [Build](#build)
 - [License](#license)
@@ -54,27 +51,11 @@
 
 ## Running
 
-### Install
-
 ```bash
 # Install packages
 yarn install
-```
-
-### Yarn
-
-```bash
 # Start dev server locally
 yarn start
-```
-
-### Docker
-
-```bash
-# Build
-docker build -t telzir:dev .
-# Run
-docker run -v ${PWD}:/app -v /app/node_modules -p 3001:3000 --rm telzir:dev
 ```
 
 Application will be opened automatically on [localhost:3000](http://localhost:3000).
